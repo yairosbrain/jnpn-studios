@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="he" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=5.0">
+    <title>JNPN Studios | אופנה אלגנטית וקולקציות על-זמניות</title>
+    <meta name="description" content="גלו את JNPN Studios: אופנה מדויקת, קווים נקיים ואיכות ללא פשרות.">
+    <link rel="canonical" href="https://jnpnstudios.com/">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Assistant:wght@400;700&family=Cormorant+Garamond:wght@400;600&display=swap" rel="stylesheet">
+    <style>
+        :root{--cream:#FDFBF7;--beige:#A69689;--charcoal:#1A1A1A;--font-main:'Assistant',sans-serif,system-ui;--font-accent:'Cormorant Garamond',serif,Georgia}
+        *{box-sizing:border-box;margin:0;padding:0}
+        body{background-color:var(--cream);color:var(--charcoal);font-family:var(--font-main);line-height:1.6}
+        header{padding:1.5rem;display:flex;justify-content:space-between;align-items:center}
+        .logo{font-family:var(--font-accent);font-size:1.5rem;font-weight:bold;text-decoration:none;color:var(--charcoal)}
+        .hero{padding:3rem 1rem;text-align:center}
+        .hero h1{font-family:var(--font-accent);font-size:2.5rem;margin-bottom:1rem}
+        .grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(280px,1fr));gap:1.5rem;padding:1rem}
+        .product-card{background:#fff;padding:1rem;text-align:center;border:1px solid #ccc;display:flex;flex-direction:column}
+        .btn-primary{background:var(--charcoal);color:#fff;padding:0.8rem 2rem;border:none;cursor:pointer;transition:opacity .3s;font-weight:bold}
+        .btn-primary:hover{opacity:.8}
+        footer{padding:2rem;text-align:center;border-top:1px solid var(--beige);margin-top:3rem}
+    </style>
+</head>
+<body>
+    <header>
+        <nav aria-label="ניווט ראשי"><a href="/" class="logo">JNPN Studios</a>
+            <button type="button" class="cart-icon" aria-label="עגלת קניות, 0 פריטים">🛒 <span id="cart-count" aria-hidden="true">0</span></button>
+        </nav>
+    </header>
+    <main>
+        <section class="hero">
+            <h1>קולקציות על-זמניות מבית JNPN Studios</h1>
+            <p>אופנה מדויקת, קווים נקיים, איכות ללא פשרות.</p>
+            <button type="button" class="btn-primary">צפייה בקולקציה החדשה</button>
+        </section>
+        <section class="collections">
+            <h2>קולקציות מוצרים</h2>
+            <div class="grid" id="product-grid"></div>
+        </section>
+    </main>
+    <footer>
+        <nav aria-label="קישורים משפטיים"><a href="/shipping">משלוחים</a> <a href="/terms">תקנון</a> <a href="/privacy">פרטיות</a></nav>
+    </footer>
+    <script src="script.js" defer></script>
+</body>
+</html>
