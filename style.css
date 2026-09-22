@@ -1,1 +1,12 @@
-/* Critical CSS inlined in index.html for performance */
+:root{--bg:#f9f7f4;--text:#2d2d2d;--accent:#c5a880}
+body{margin:0;font-family:'Assistant',sans-serif;background:var(--bg);color:var(--text);line-height:1.6}
+header{padding:2rem 5%;display:flex;justify-content:space-between;align-items:center}
+.logo{font-family:'Playfair Display',serif;font-size:1.8rem;letter-spacing:2px;text-decoration:none;color:var(--text)}
+.hero{height:70vh;display:flex;align-items:center;justify-content:center;text-align:center;background:#e8e4df}
+.hero h1{font-family:'Playfair Display',serif;font-size:3rem;margin-bottom:1rem}
+.btn-main{padding:1rem 2rem;background:var(--text);color:#fff;border:none;cursor:pointer;margin-top:1rem}
+.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(300px,1fr));gap:2rem;padding:4rem 5%}
+.product-card{background:#fff;padding:1rem;text-align:center;border:1px solid #eee}
+.img-placeholder{height:350px;background:#ddd;margin-bottom:1rem}
+.price{font-weight:bold;color:var(--accent);margin:0.5rem 0}
+footer{text-align:center;padding:3rem;border-top:1px solid #ddd}
