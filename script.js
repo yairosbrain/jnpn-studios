@@ -10,7 +10,7 @@ function renderProducts() {
             <div class="img-placeholder"></div>
             <h3>${p.name}</h3>
             <p class="price">${p.price} ₪</p>
-            <button onclick="addToCart(${p.id}, '${p.name}')">הוסף לסל</button>
+            <button class="add-to-cart-btn" onclick="addToCart(${p.id}, '${p.name}')">הוסף לסל</button>
         `;
         grid.appendChild(article);
     });
